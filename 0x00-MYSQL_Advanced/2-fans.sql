@@ -1,0 +1,9 @@
+-- SELECT
+--   origin,
+--   SUM(nb_fans) AS unique_fan_count
+-- FROM
+--   metal_bands
+-- GROUP BY
+--   origin
+-- ORDER BY
+--   nb_fan DESC;

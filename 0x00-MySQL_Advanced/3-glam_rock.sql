@@ -1,18 +1,11 @@
--- Selects bands with Glam rock style
--- And orders them by their lifespan
+-- selects bands with Glam rock style
+-- and orders them by their lifespan
 SELECT
   band_name,
-  (2022 - formed) AS lifespan
+  (2022 - formed) AS lifespan,
 FROM
-  (
-    SELECT
-      band_name,
-      formed,
-      style
-    FROM
-      bands
-  ) AS temp
+  metal_bands,
 WHERE
-  style = 'Glam rock'
+  style = 'Glam rock',
 ORDER BY
   lifespan DESC;

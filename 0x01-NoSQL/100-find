@@ -1,0 +1,3 @@
+// lists all document with name 'Holberton' within the school collection
+
+db.school.find({ name: { $regex: "^Holberton" } }).forEach(printjson)

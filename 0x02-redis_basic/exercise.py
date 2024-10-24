@@ -77,3 +77,6 @@ class Cache:
         if isinstance(result, int) or result is None:
             return result
         raise ValueError(f"Expected int, got {type(result)}")
+
+
+    
